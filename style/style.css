@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    color: darkcyan;
+}
+
+}
+#main h1 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+li {
+    list-style: none;
+}
+ul {
+    display: flex;
+    margin-top: 10%;
+    width: 50%;
+    margin-left: 25%;
+}
+.li:nth-child(2) {
+    margin-left: auto;
+}
+.li:nth-child(1) {
+    margin-left: ;
+}
+
+ .yay {
+    background: none;
+    border: none;
+    border-top: 0.5px;
+    border-bottom: 0.5px;
+    border-radius: 15px;
+    transition: 0.8s; 
+    padding: 10px;
+ }
+
+.yay:hover {
+    background-color: darkcyan;
+    color: white;
+    cursor: pointer;
+}.yay:active {
+  background-color: darkcyan;
+  color: white;
+  cursor: pointer;
+}
+
+#myself {
+    color: darkcyan;
+}
+
+.yays {
+  color: darkcyan;
+}
+
+.container {
+  color: darkcyan;
+}
+
+#myself h1 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  input[type=number], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  input[type=date], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  
+  /* Style the submit button with a specific background color etc */
+  
+  #dabutton {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  #dabutton:hover {
+    background-color: #45a049;
+  }
+
+  #dazbutton {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+#dazbutton:hover {
+    background-color: #45a049;
+  }
+
+  #addbutton {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  #addbutton:hover {
+    background-color: #45a049;
+  }
+  .blankform {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+.blankform:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    font-family: sans-serif;
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+  }
+
+  #logo {
+      width: 25%;
+      height: 8.591481122942885%;
+      background: url("logo.jpg");
+      margin-left: 37.5%;
+      margin-top: 10px;
+  }
+
+  #myself {
+    display: none;
+  }
+
+  #guestname {
+    font-family: sans-serif;
+    font-size: 1em;
+  }
+ #guestcont {
+   display: none;
+ }
+
+.yays h6 {
+  opacity: 70%;
+}
+
+.yays {
+  display: none;
+}

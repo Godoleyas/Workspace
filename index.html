@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <img id="logo" src="style/logo.jpg">
+<div id="main">
+        <h1 id="optext" style="text-align: center; font-family: sans-serif;">Hotel Booking Template</h1>
+        <ul>
+            <li class="li">
+                <button onclick="myself()" class="yay">For myself</button>
+            </li>
+            <li class="li">
+                <button class="yay" onclick="team()">For team</button>
+            </li>
+        </ul>
+</div>
+<div id="myself">
+    <!-- <h1 id="mytxt">Fill the form and submit</h1> -->
+    <div class="container">
+       
+      
+          <label for="fname">Full Name</label>
+          <input class="inputs" type="text" id="fname" name="fullname" placeholder="Your full name...">
+          <h1 id="fullnamemyself" style="display:none;"></h1>
+      
+          <label for="pnumber">Phone Number</label>
+          <input class="inputs" type="number" id="pnumb" name="phonenumber" placeholder="Your phone number...">
+          <h1 id="phonenumbermyself" style="display:none;"></h1>
+          <label for="eaddress">Email Address</label>
+          <input class="inputs" type="email" id="eadd" name="emailaddress" placeholder="Your Email Address...">
+          <h1 id="emailaddressmyself" style="display:none;"></h1>
+          <label for="reason">Reason</label>
+          <textarea class="inputs" id="reason" name="subject" placeholder="Your reason..." style="height:200px"></textarea>
+          <h1 id="reasonmyself" style="display:none;"></h1>
+          <label for="tpservicetlol">Types Of Services</label><br>
+      <select id="tptservicet" class="types" name="country">
+        <option value="ACC">Accommodation (Bed & Breakfast)</option>
+        <option value="FACC">Full Accommodation (Bed & Breakfast,Lunch & Dinner)</option>
+        <option value="FFMP">1st class full-day meeting package</option>
+        <option value="FHMP">1st class half-day meeting package</option>"
+      </select>
+      <h4 id="tptservicettxt" style="display: none;">
+        Accommodation (Bed & Breakfast) ☐<br>
+        Full Accommodation (Bed & Breakfast,Lunch & Dinner) ☐<br>
+        1st class full-day meeting package ☐<br>
+        1st class half-day meeting package ☐<br>
+    </h4>
+          <label for="arrivaldate">Arrival Date</label>
+          <input class="inputs" type="date" id="date" name="date">
+          <h1 id="admyself" style="display:none;"></h1>
+          <label for="departuredate">Departure Date</label>
+          <input class="inputs" type="date" id="datee" name="ddate">
+          <h1 id="ddmyself" style="display:none;"></h1>
+          <label for="nights">Number Of Nights</label>
+          <input class="inputs" type="number" name="numberofnights" id="numbnights" placeholder="Number Of Nights">
+          <h1 id="numberofnightsmyself" style="display:none;"></h1>
+          <button id="dabutton" onclick="lol()">Submit</button>
+          <button id="blankformlol" class="blankform" onclick="blanks()">Print (Blank Form)</button>
+          <div id="yays2" class="yays">
+            <h6>Prepared By - Name - __________________, Signature  -________, Date - __________</h6>
+            <h6>Requested By - Name - __________________, Signature - ________, Date - __________</h6>
+            <h6>Approved By - Name - __________________, Signature - ________, Date - __________</h6>
+        </div>
+      </div>
+</div>
+<div id="guestcont" class="container">
+  
+      
+      <label for="fname">Name Of Guests</label>
+      <input class="inputs" type="text" id="pnamet" name="fullname" placeholder="Name Of Guests...">
+      <h1 id="guestname"></h1>
+      <button onclick="addguestname()" id="addbutton">ADD</button><br><br>
+      <label for="fname">Name Of Coordinator</label>
+      <input class="inputs" type="text" id="fnamet" name="fullname" placeholder="Coordinator's Name...">
+      <h1 id="fullnameteam" style="display:none;"></h1>
+      <label for="pnumber">Phone Number</label>
+      <input class="inputs" type="number" id="pnumbt" name="phonenumber" placeholder="Your phone number...">
+      <h1 id="phonenumberteam" style="display:none;"></h1>
+      <label for="eaddress">Email Address</label>
+      <input class="inputs" type="email" id="eaddt" name="emailaddress" placeholder="Your Email Address...">
+      <h1 id="emailaddressteam" style="display:none;"></h1>
+      <label for="reason">Reason</label>
+      <textarea class="inputs" id="reasont" name="subject" placeholder="Your reason..." style="height:200px"></textarea>
+      <h1 id="reasonteam" style="display:none;"></h1>
+      <label for="tpservicetlol">Types Of Services</label><br>
+      <select id="tptservice" class="types" name="country">
+        <option value="ACC">Accommodation (Bed & Breakfast)</option>
+        <option value="FACC">Full Accommodation (Bed & Breakfast,Lunch & Dinner)</option>
+        <option value="FFMP">1st class full-day meeting package</option>
+        <option value="FHMP">1st class half-day meeting package</option>"
+      </select>
+      <h4 id="tptservicetxt" style="display: none;">
+        Accommodation (Bed & Breakfast) ☐<br>
+        Full Accommodation (Bed & Breakfast,Lunch & Dinner) ☐<br>
+        1st class full-day meeting package ☐<br>
+        1st class half-day meeting package ☐<br>
+    </h4>
+
+      <h1 id="tpservicet" style="display:none;"></h1>
+      <label for="arrivaldate">Arrival Date</label>
+      <input class="inputs" type="date" id="datet" name="date" placeholder="Arrival Date">
+      <h1 id="adteam" style="display:none;"></h1>
+      <label for="departuredate">Departure Date</label>
+      <input class="inputs" type="date" id="dateet" name="ddate" placeholder="Departure Date">
+      <h1 id="ddteam" style="display:none;"></h1>
+      <label for="nights">Number Of Nights</label>
+      <input class="inputs" type="number" name="numberofnights" id="numbnightst" placeholder="Number Of Nights">
+      <h1 id="numberofnightsteam" style="display:none;"></h1>
+      <button id="dazbutton" onclick="lolz()">Print</button>
+      <button id="blanklol" class="blankform" onclick="blank()">Print (Blank Form)</button>
+      <div id="yays1" class="yays">
+        <h6>Prepared By - Name - __________________, Signature  -________, Date - __________</h6>
+            <h6>Requested By - Name - __________________, Signature - ________, Date - __________</h6>
+            <h6>Approved By - Name - __________________, Signature - ________, Date - __________</h6>
+      </div>
+  </div>
+
+<script src="script/app.js"></script>
+</body>
+</html>
